@@ -1,3 +1,7 @@
+This a dataset about cars. We're trying to provide users multiple ways to analysis the data and use three different model types to fit the models.
+At last, users could get a conclusion by themself to determine which factors have the greatest impact on MPG, and what are the most important factors when buying a car.
+
+The list of packages used: 
 library(ggplot2)
 library(tidyverse)
 library(DT)
@@ -6,6 +10,10 @@ library(caret)
 library(leaps)
 library(randomForest)
 cars <- read_csv("cars.csv")
+
+Code used to render these documents:
+
+shiny::runGitHub()
 
 shinyUI<- dashboardPage(
   skin = "green",
