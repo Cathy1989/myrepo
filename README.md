@@ -173,25 +173,7 @@ shinyUI<- dashboardPage(
                   
           
         ),
-             tabItem(tabName = "Model_Prediction",
-                     titlePanel("Three Models Predictions "),
-                     sidebarLayout(
-                       sidebarPanel(
-                         sliderInput("cyl", "Cylinders",
-                                     min = 3, max = 8, value = 4, step = 1),
-                         sliderInput("dis", "Displacement",
-                                     min = 68, max = 455, value = 110, step = 30),
-                         sliderInput("hor", "Horsepower",
-                                     min = 46, max = 230, value = 80, step = 20),
-                         sliderInput("wei", "Weight",
-                                     min = 1613, max = 5140, value = 2230, step = 350),
-                         sliderInput("acc", "Acceleration",
-                                     min = 8, max = 24.8, value = 14, step = 1.5),
-                         sliderInput("yea", "Year",
-                                     min = 70, max = 82, value = 75, step = 1)
-                       ),
-                       mainPanel(
-                         dataTableOutput("prediction")  
+             
                          
                   
           )
