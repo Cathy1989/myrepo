@@ -24,7 +24,7 @@ library(randomForest)
 running your app).
 
 install.packages(c("ggplot2", "tidyverse", "DT", "shinydashboard", "caret", "leaps", "randomForest" ))
-Code used to render these documents:
+
 
 ## The shiny::runGitHub() code that we can copy and paste into RStudio to run your app.
 
