@@ -5,8 +5,7 @@
 This a dataset about cars. We're trying to provide users multiple ways to analysis the data and use three different model types to fit the models.
 At last, users could get a conclusion by themself to determine which factors have the greatest impact on MPG, and what are the most important factors when buying a car.
 
-## The list of packages used:
-
+## A list of packages needed to run the app
 library(ggplot2)
 
 library(tidyverse)
@@ -21,11 +20,16 @@ library(leaps)
 
 library(randomForest)
 
-cars <- read_csv("cars.csv")
+## A line of code that would install all the packages used (so we can easily grab that and run it prior to
+running your app).
 
+install.packages(c("ggplot2", "tidyverse", "DT", "shinydashboard", "caret", "leaps", "randomForest" ))
 Code used to render these documents:
 
-shiny::runGitHub()
+## The shiny::runGitHub() code that we can copy and paste into RStudio to run your app.
+
+shiny::runGitHub(repo="myrepo", username= "Cathy1989")
+
 
 shinyUI<- dashboardPage(
   skin = "green",
