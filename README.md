@@ -239,7 +239,7 @@ shinyUI<- dashboardPage(
                 )
         
                 ),
-        downloadButton("downloadData", "Download")
+        
                              
                       
           )
